@@ -3,7 +3,7 @@
 int main()
 {
    
-   int x=0;
+   int x=0,y;
   loop: if(x<6) {
        printf("%d\n",x);
        y=y+x;

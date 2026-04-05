@@ -2,45 +2,48 @@
 
 int main()
 {
-   printf("Enter a no:");
-   int n=0,temp=0,di=0,c=0,place=1,sum=0;
-   scanf("%d",&n);
-   
-   di=2;
-   
-   for(temp=n;di>0;di--) {
-       sum=((temp%10)*place)+sum;
-       temp=temp/10;
-       place=place*10;
-       
-       
-   }
-   
-   for(int i=1;i<=sum;i++) {
-	    if(sum%i==0) {
-	        c=c+1;
-	    }
-	    
+	int n=0,count=0,temp=0,no=0,p=0,dig=1;
+	printf("Enter the no:");
+	scanf("%d",&n);
+	int di=2;
+
+	temp=n;
+	int i=1;
+
+	while(di>0) {
+
+		p=temp%10;
+		no=(p*dig)+no;
+		temp=temp/10;
+		dig=dig*10;
+		di--;
+
 	}
+	printf("%d\n",no);
 	
-	
-	if (c==2) {
-	    printf("Prime");
-	    
+	while(i<=no) {
+		if(no%i==0) {
+			count=count+1;
+		}
+		i++;
+
 	}
-	else  {
-	    printf("Not Prime");
+
+	if(count==2) {
+		printf("PRIME");
+
+
+	}
+	else if (count>2) {
+		printf("NOT PRIME");
 	}
 
-   
-   
-   
-   
-   
-   
 
-   
-   
 
-    return 0;
+
+
+
+
+
+	return 0;
 }

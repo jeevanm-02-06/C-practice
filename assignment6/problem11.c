@@ -1,16 +1,31 @@
 #include <stdio.h>
 
-int main()
-{
-    printf("enter a no: ");
-    int n=0,di=0;
-    scanf("%d",&n);
-    for(int t=n;t/10>0;t=t/10 ) {
-        di=di+1;
-    }
-    di=di+1;
+int main() {
+    // Write C code here
+    int temp=0,sum=0,x,dig=0,p=0;
+
+    scanf("%d",&x);
+    temp=x;
+   
     
-    printf("%d",di);
+    
+    while(temp%10>0) {
+        
+        dig=dig+1;
+        sum=sum+(temp%10);
+        temp=temp/10;
+       
+        
+    }
+    
+    printf("%d",sum);
+    
+    
+    
+    
+    
+    
+    
 
     return 0;
 }

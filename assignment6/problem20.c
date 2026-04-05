@@ -2,23 +2,33 @@
 
 int main()
 {
-    printf("Enter the range\n");
-    int n=0,p=0,c=0;
-    
-    for (int i=2;i<=10;i++) {
-        c=0;
-        for(int j=1;j<=10;j++) {
-            if(i%j==0) {
-                c=c+1;
-                
-            }
-            
-        }
-        if (c==2) {
-            p=p+1;
-        }
-    }
-    printf("%d",p);
+	printf("Hello World\n");
 
-    return 0;
+	int n=10,j=1,i=1,num=0,count=0;
+
+	while (i<=10) {
+		
+		j=1;
+		count=0;
+		while(j<=i) {
+		    
+		    if(i%j==0) {
+		        count=count+1;
+		    }
+		    j++;
+		    
+		    
+		}
+		i++;
+		if(count==2) {
+		    num=num+1;
+
+		}
+		
+		    
+		    
+		}
+		printf("%d",num);
+		
+	return 0;
 }

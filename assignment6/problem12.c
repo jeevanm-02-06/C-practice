@@ -1,22 +1,24 @@
+
 #include <stdio.h>
 
-int main()
-{
-    printf("enter a no: ");
-    int n=0,di=0,s=0,y=0;
-    scanf("%d",&n);
-    for(int t=n;t/10>0;t=t/10 ) {
-        di=di+1;
-        
-        s=s+(t%10);
-        y=t;
-    }
-    s=s+(y/10);
-    di=di+1;
-    printf("%d",s);
-    
-    
-    
+int main() {
+    // Write C code here
+    int temp=0,sum=0,x,dig=0,last_dig=0;
 
+    scanf("%d",&x);
+    temp=x;
+   
+    
+    
+    while(temp%10>0) {
+        
+        dig=dig+1;
+        last_dig=(temp%10);
+        temp=temp/10;
+        printf("%d",last_dig);
+       
+        
+    }
+    
     return 0;
 }

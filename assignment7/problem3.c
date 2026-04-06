@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int disp_assend() {
+int disp_sum() {
     
 
     int n=0;

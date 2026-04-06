@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int disp_assend() {
+int disp_descend() {
     for(int i=5;i!=0;i--) {
         printf("%d \n",i);
     }

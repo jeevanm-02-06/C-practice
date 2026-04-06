@@ -10,6 +10,6 @@ int disp_descend() {
 int main()
 {
     int n;
-    disp_assend();
+    disp_descend();
     return 0;
 }

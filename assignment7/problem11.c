@@ -18,7 +18,7 @@ int main()
     printf("enter a no: ");
     int n=0,di=0,s=0,y=0;
     scanf("%d",&n);
-    disp_assend(n);
+    disp_count_all_digits(n);
     return 0;
 }
 

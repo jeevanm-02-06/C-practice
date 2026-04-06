@@ -18,6 +18,6 @@ int disp_sum() {
 int main()
 {
     int n;
-    disp_assend();
+    disp_sum();
     return 0;
 }

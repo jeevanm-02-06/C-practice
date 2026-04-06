@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int disp_assend() {
+int disp_rsum() {
     
 
     
@@ -19,6 +19,6 @@ int disp_assend() {
 int main()
 {
     int n;
-    disp_assend();
+    disp_rsum();
     return 0;
 }

@@ -22,7 +22,7 @@ int main()
     
     for(int j=0;j<=4;j++) {
         
-        if ((int)five[j] % 2 == 0) {
+        if ((int)five[j] % 2 != 0) {
                 new[count]=five[j];
                
                 
